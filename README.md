@@ -9,7 +9,7 @@ This is, to our knowledge, the first partial correlation analysis available at t
 The spectrally inside-out class includes the separable coregionalization model, a process convolution construction, and the parsimonious multivariate Mat\'ern, for which such a characterization was previously thought unavailable. We further show that a nonstationary inside-out model satisfies the same factorization and admits the same necessary and sufficient conditions.
 Our results clarify the limitations of existing approaches: linear coregionalization models encode conditional independence through the zero pattern of the inverse factor loading matrix and do not result in interpretable partial cross-correlation functions. Low-rank spatial factor models lack a meaningful graphical characterization. Methods that enforce network structure through auxiliary graphical layers only characterize presence or absence of graph edges. We illustrate our results through synthetic and real data.
 
-### Preprint: [https://arxiv.org](https://arxiv.org)
+### Preprint: [https://arxiv.org/html/2604.09953](https://arxiv.org/html/2604.09953)
 
 
 ## Requirements:
