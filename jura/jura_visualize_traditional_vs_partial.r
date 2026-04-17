@@ -435,7 +435,7 @@ row_part <- list()
 for (k in seq_along(others)) {
   row_part[[k]] <- make_est_panel(i_full, others[k], "partial",
                                   iox_pre, gpgpm_fit, outcome_names,
-                                  show_x = FALSE, show_y = (k == 1))
+                                  show_x = TRUE, show_y = (k == 1))
 }
 
 p_er_part <- make_effrange_panel(i_full, j_full, "partial",

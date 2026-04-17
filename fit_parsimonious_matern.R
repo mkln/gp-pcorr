@@ -6,14 +6,14 @@ source("~/GpGp_multi_paper/R/link_multi.R")
 source("~/GpGp_multi_paper/R/check.R")
 
 
-source("~/spiox-network/functions.R")
+source("functions.R")
 
 
 RhpcBLASctl::blas_set_num_threads(1)
 RhpcBLASctl::omp_set_num_threads(16)
 
 
-parsimonious_matern <- function(Y, X, coords, m, filename){
+parsimonious_matern <- function(Y, X, coords, m, filename=NULL){
   
   #X <- X[complete.cases(Y),]
   #coords <- coords[complete.cases(Y),]
@@ -113,7 +113,9 @@ parsimonious_matern <- function(Y, X, coords, m, filename){
     fit = fit
   )
   
-  save(gpgpm_fit, file = filename)
+  if(!is.null(filename)){
+    save(gpgpm_fit, file = filename)
+  }
   
   return(gpgpm_fit)
 }
